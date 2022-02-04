@@ -74,6 +74,11 @@ nav {
   text-underline-offset: 8px;
 }
 
+.activeHeader {
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
+
 #homePage,
 #productPage,
 #introducePage,
@@ -85,26 +90,18 @@ nav {
 }
 
 /******************** Banner ********************/
-#bannerRoot {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-/* #banner__img1,
-#banner__img2 {
-  width: 80em;
-  height: 34em;
-} */
 
 /******************** Introduce ********************/
 .label1 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 22px;
+  color: #ffc75f;
+  letter-spacing: 5px;
+}
+
+.contentIntro {
+  text-align: justify;
 }
 
 /******************** begin Product ********************/
@@ -119,22 +116,17 @@ nav {
   height: auto;
 }
 
-.btnAddCart {
-  background-color: #eed600;
-}
-
 .btnAddCart:hover {
   transform: translateY(-0.5em);
   transition: transform 0.5s;
 }
 
 .label2 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 22px;
+  color: #ffc75f;
+  letter-spacing: 5px;
 }
 
 .card-title {
@@ -145,8 +137,7 @@ nav {
 
 .cardProduct:hover {
   cursor: pointer;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(255, 199, 95, 0.8) 0px 0px 0px 2px;
 }
 
 .discountPrice {
@@ -156,13 +147,14 @@ nav {
 .price {
   font-weight: bolder;
 }
+
 .priceRoot {
   display: flex;
   justify-content: center;
   justify-items: center;
 }
 
-.iconPlus {
+.iconCart {
   font-size: 15px;
 }
 
@@ -175,12 +167,11 @@ nav {
 
 /******************** News ********************/
 .label3 {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 22px;
+  color: #ffc75f;
+  letter-spacing: 5px;
 }
 
 .cardNews {
@@ -196,6 +187,12 @@ nav {
   display: flex;
   justify-content: center;
   justify-items: center;
+}
+
+#seeMoreRoot {
+  float: left;
+
+  text-align: right;
 }
 
 /******************** Footer ********************/
@@ -217,6 +214,26 @@ nav {
 .copyRight {
   color: #fff;
 }
+
+.label4 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 22px;
+  color: #ffc75f;
+  letter-spacing: 2px;
+}
+
+.iconFooter {
+  color: #ffc75f;
+}
+
+#paymentImg {
+  width: 4em;
+  height: 2em;
+  background-color: #fff;
+  border: solid 2px #ffc75f;
+}
+
 /******************** Button ********************/
 #myBtnScrolling {
   display: none;
