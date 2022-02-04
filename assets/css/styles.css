@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+/********************  Header ********************/
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#desHeaderRoot {
+  font-size: 15px;
+}
+
+.socialLink,
+.ri-shopping-bag-line {
+  font-size: 20px;
+}
+
+.socialLink:hover {
+  cursor: pointer;
+}
+
+.socialLink .ri-facebook-box-line {
+  color: #0073c6;
+}
+
+.socialLink .ri-instagram-line {
+  color: #d15465;
+}
+
+.socialLink .ri-twitter-line {
+  color: #3596b5;
+}
+
+.socialLink .ri-mail-line {
+  color: #ff8066;
+}
+
+#brandNameRoot {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #ffc75f;
+}
+
+#brandNameRoot:hover {
+  cursor: pointer;
+}
+
+.nav-item-header #homePage,
+.nav-item-header #introducePage,
+.nav-item-header #contactPage,
+.nav-item-header #loginPage,
+.nav-item-header .dropdown #productPage,
+.nav-item-header .dropdown #beautyPage {
+  text-transform: uppercase;
+}
+
+.nav-item-header:hover {
+  cursor: pointer;
+}
+
+.nav-item-header #homePage:hover,
+.nav-item-header #productPage:hover,
+.nav-item-header #beautyPage:hover,
+.nav-item-header #introducePage:hover,
+.nav-item-header #contactPage:hover {
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
+
+#homePage,
+#productPage,
+#introducePage,
+#beautyPage,
+#contactPage,
+#loginPage,
+#cartIcon {
+  color: #fff;
+}
+
+/******************** Banner ********************/
+#bannerRoot {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* #banner__img1,
+#banner__img2 {
+  width: 80em;
+  height: 34em;
+} */
+
+/******************** Introduce ********************/
+.label1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+/******************** begin Product ********************/
+#product1Root,
+#product2Root,
+#product3Root,
+#product4Root,
+#product5Root,
+#product6Root,
+#product7Root,
+#product8Root {
+  height: auto;
+}
+
+.btnAddCart {
+  background-color: #eed600;
+}
+
+.btnAddCart:hover {
+  transform: translateY(-0.5em);
+  transition: transform 0.5s;
+}
+
+.label2 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.card-title {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cardProduct:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.discountPrice {
+  text-decoration: line-through;
+}
+
+.price {
+  font-weight: bolder;
+}
+.priceRoot {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.iconPlus {
+  font-size: 15px;
+}
+
+.controlBtn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: -15px;
+}
+
+/******************** News ********************/
+.label3 {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.cardNews {
+  transition: transform 0.2s; /* Animation */
+}
+
+.cardNews:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#newMore {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+/******************** Footer ********************/
+.titleFooter {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.nav-link-footer {
+  color: #fff !important;
+}
+
+.lineFooter {
+  border: solid 1px #fff;
+  width: 2em;
+}
+
+.copyRight {
+  color: #fff;
+}
+/******************** Button ********************/
+#myBtnScrolling {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ffdf82;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtnScrolling:hover {
+  transform: translateY(-0.5rem);
+}

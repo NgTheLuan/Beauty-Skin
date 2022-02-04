@@ -1,0 +1,112 @@
+/* Mobile: width < 740px */
+@media screen and (max-width: 740px) {
+  /********************  Header ********************/
+
+  #desHeaderRoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialLink {
+    font-size: 25px !important;
+  }
+
+  .socialLink1 {
+    display: none !important;
+  }
+}
+
+/* Tablet: width >= 740 px and width < 1024 px */
+
+/* Menu Tablet + Mobile */
+@media screen and (max-width: 991px) {
+  nav {
+    display: none;
+  }
+
+  #smallMenuRoot {
+    display: inline;
+  }
+
+  #productCollapse,
+  #beautyCollapse,
+  .offcanvas-body,
+  .btn-close {
+    color: rgb(41, 39, 39);
+  }
+
+  header {
+    display: none;
+  }
+
+  #bannerRoot {
+    margin-top: 0px !important;
+  }
+
+  #quickMenuRoot {
+    background-color: #000;
+  }
+
+  #quickMenuRoot h5 {
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10px !important;
+    position: relative;
+  }
+
+  #quickMenuRoot h5 {
+    display: block;
+  }
+
+  .socialLink1 {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+  }
+
+  .socialLink1 .ri-facebook-box-line {
+    color: #0073c6;
+  }
+
+  .socialLink1 .ri-instagram-line {
+    color: #d15465;
+  }
+
+  .socialLink1 .ri-twitter-line {
+    color: #3596b5;
+  }
+
+  .socialLink1 .ri-mail-line {
+    color: #ff8066;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  nav {
+    display: block;
+  }
+
+  #quickMenuRoot h5,
+  .socialLink1,
+  #quickMenuRoot {
+    display: none;
+  }
+
+  #quickMenuRoot {
+    display: none !important;
+  }
+
+  header .container {
+    margin-top: 5px !important;
+  }
+}
+
+/* PC : width >= 1024 px */
+@media screen and (max-width: 1200px) {
+}
