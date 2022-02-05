@@ -56,8 +56,8 @@ nav {
 .nav-item-header #introducePage,
 .nav-item-header #contactPage,
 .nav-item-header #loginPage,
-.nav-item-header .dropdown #productPage,
-.nav-item-header .dropdown #beautyPage {
+.nav-item-header #newsPage,
+.nav-item-header .dropdown #productPage {
   text-transform: uppercase;
 }
 
@@ -67,14 +67,9 @@ nav {
 
 .nav-item-header #homePage:hover,
 .nav-item-header #productPage:hover,
-.nav-item-header #beautyPage:hover,
+.nav-item-header #newsPage:hover,
 .nav-item-header #introducePage:hover,
 .nav-item-header #contactPage:hover {
-  text-decoration-line: underline;
-  text-underline-offset: 8px;
-}
-
-.activeHeader {
   text-decoration-line: underline;
   text-underline-offset: 8px;
 }
@@ -82,11 +77,86 @@ nav {
 #homePage,
 #productPage,
 #introducePage,
-#beautyPage,
+#newsPage,
 #contactPage,
 #loginPage,
 #cartIcon {
   color: #fff;
+}
+
+#loginPage:hover,
+#cartIcon:hover {
+  transform: scale(1.2);
+}
+
+.offcanvas-body i,
+.offcanvas-body p,
+.offcanvas-body hr {
+  color: #ffff !important;
+}
+
+.offcanvas-body a {
+  text-decoration: none;
+}
+
+#closeBtn {
+  background-color: #fff !important;
+}
+
+/******************** Offset ********************/
+.offCart {
+  position: relative;
+  list-style-type: none;
+}
+
+.offCart li {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.offCart li a img {
+  width: 100px;
+  height: 100px;
+}
+
+.offCart li a {
+  color: #111;
+  text-decoration: none;
+}
+
+.offCart li .remove {
+  color: #111;
+  position: absolute;
+  font-size: 22px;
+  right: 20px;
+}
+
+.qualityPrice {
+  display: block;
+  font-size: 14px;
+}
+
+.qualityPrice .amount {
+  color: #111;
+  font-weight: 500;
+}
+
+.subTotal {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.subTotal .allPrice {
+  text-decoration: none;
+  font-weight: 900;
+  float: right;
+}
+
+.offBtnLoad {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /******************** Banner ********************/
@@ -158,6 +228,15 @@ nav {
   font-size: 15px;
 }
 
+#menuProduct {
+  letter-spacing: 1px;
+}
+
+#menuProduct:hover {
+  font-weight: bolder;
+  color: #453400;
+}
+
 .controlBtn {
   display: flex;
   justify-content: center;
@@ -193,6 +272,11 @@ nav {
   float: left;
 
   text-align: right;
+}
+
+#iconLoadAll {
+  position: relative;
+  top: 2px;
 }
 
 /******************** Footer ********************/
@@ -243,10 +327,10 @@ nav {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #ffdf82;
+  background-color: #e2b659;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 18px;
   border-radius: 10px;
   font-size: 18px;
 }

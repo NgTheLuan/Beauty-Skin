@@ -89,7 +89,7 @@
     </a>
 
     <div
-      style="background-color: #ffc75f"
+      style="background-color: #111; color: #ffc75f"
       class="offcanvas offcanvas-start"
       tabindex="-1"
       id="offcanvasExample"
@@ -100,6 +100,13 @@
           <span>
             <h4 style="font-weight: bolder">B E S K I N</h4>
             <i style="font-size: 14px">Thương hiệu Mỹ Phẩm Việt Nam</i>
+
+            <div class="socialLink pt-3" id="iconHeaderRoot">
+              <i class="ri-facebook-box-line me-3" id="iconFB"></i>
+              <i class="ri-instagram-line me-3"></i>
+              <i class="ri-twitter-line me-3"></i>
+              <i class="ri-mail-line me-3"></i>
+            </div>
           </span>
         </div>
         <button
@@ -107,13 +114,14 @@
           class="btn-close text-reset"
           data-bs-dismiss="offcanvas"
           aria-label="Close"
+          id="closeBtn"
         ></button>
       </div>
 
       <div class="offcanvas-body">
         <span class="d-flex">
           <i class="ri-home-4-line me-2" style="font-size: 18px"></i>
-          <h5 class="pb-3">Trang Chủ</h5>
+          <a href="index.html"><p class="pb-3">Trang Chủ</p></a>
         </span>
 
         <a
@@ -126,86 +134,65 @@
           aria-controls="multiCollapseExample1"
           ><span class="d-flex">
             <i class="ri-ink-bottle-fill me-2" style="font-size: 18px"></i>
-            <h5 class="pb-3 mt-1">Sản Phẩm</h5>
+            <p class="pb-3 mt-1">Sản Phẩm</p>
           </span></a
         >
         <div class="collapse multi-collapse" id="multiCollapseExample1">
           <div
             class="card card-body"
-            style="background-color: #ffc75f; border: none; padding: 0"
+            style="background-color: #f9edf8; border: none; padding: 0"
           >
             <ul aria-labelledby="productPage">
               <li>
-                <a class="dropdown-item" href="#">Tất cả sản phẩm</a>
+                <a class="dropdown-item" href="#labelProduct" id="allProduct"
+                  >Tất cả sản phẩm</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" href="#">Danh mục 1</a>
+                <a class="dropdown-item" href="#">Sữa Rữa Mặt</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Danh mục 2</a>
+                <a class="dropdown-item" href="#">Nước Hoa Hồng</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Danh mục 3</a>
+                <a class="dropdown-item" href="#">Serum</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Danh mục 4</a>
+                <a class="dropdown-item" href="#">Kem Dưỡng Ẩm</a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">Danh mục 5</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <a
-          id="beautyCollapse"
-          class="text-decoration-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#multiCollapseExample2"
-          aria-expanded="false"
-          aria-controls="multiCollapseExample2"
-        >
-          <span class="d-flex">
-            <i class="ri-magic-line me-2" style="font-size: 18px"></i>
-            <h5 class="pb-3 mt-1">Làm Đẹp</h5>
-          </span>
-        </a>
-
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div
-            class="card card-body"
-            style="background-color: #ffc75f; border: none; padding: 0"
-          >
-            <ul aria-labelledby="beautyPage">
-              <li>
-                <a class="dropdown-item" href="#">Làm đẹp 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Làm đẹp 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Làm đẹp 3</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Làm đẹp 4</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Làm đẹp 5</a>
+                <a class="dropdown-item" href="#">Mặt Nạ Dưỡng</a>
               </li>
             </ul>
           </div>
         </div>
 
         <span class="d-flex">
+          <i class="ri-article-line me-2" style="font-size: 18px"></i>
+          <a href="#labelNews"> <p class="pb-3 mt-1">Tin Tức</p></a>
+        </span>
+
+        <span class="d-flex">
           <i class="ri-feedback-line me-2" style="font-size: 18px"></i>
-          <h5 class="pb-3">Liên Hệ</h5>
+          <a href="#labelContact"><p class="pb-3">Liên Hệ</p></a>
         </span>
 
         <hr />
         <span class="d-flex">
+          <i class="ri-shopping-bag-line me-2" style="font-size: 18px"></i>
+          <p
+            class="pb-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            Giỏ Hàng
+          </p>
+        </span>
+
+        <span class="d-flex">
           <i class="ri-login-box-line me-2" style="font-size: 18px"></i>
-          <h5 class="pb-3">Đăng Nhập</h5>
+          <p class="pb-3">Đăng Nhập</p>
         </span>
       </div>
     </div>
@@ -223,8 +210,8 @@
               <li class="nav-item-header mt-1">
                 <a
                   id="homePage"
-                  href="#home"
-                  class="nav-link link-dark px-4 activeHeader"
+                  href="index.html"
+                  class="nav-link link-dark px-4"
                   aria-current="page"
                   >Trang Chủ</a
                 >
@@ -243,49 +230,37 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="productPage">
                     <li>
-                      <a class="dropdown-item" href="#">Tất Cả Sản Phẩm</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Cleanser</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Tonner/Mist</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Ampoule/Serum</a>
+                      <a
+                        class="dropdown-item"
+                        href="#labelProduct"
+                        id="menuProduct"
+                        >Tất Cả Sản Phẩm</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Moisturizer/Sun</a>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Sữa Rửa Mặt</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Mask/Pad</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-
-              <li class="nav-item-header mt-1">
-                <div class="dropdown">
-                  <a
-                    class="nav-link link-light px-3"
-                    type="button"
-                    id="beautyPage"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Làm Đẹp
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="beautyPage">
-                    <li><a class="dropdown-item" href="#">Làm đẹp 1</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Làm đẹp 2</a>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Nước Hoa Hồng</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Làm đẹp 3</a>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Serum</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Làm đẹp 4</a>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Kem Dưỡng Ẩm</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Làm đẹp 5</a>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Mặt Nạ Dưỡng</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -293,8 +268,18 @@
 
               <li class="nav-item-header mt-1">
                 <a
+                  class="nav-link link-light px-3"
+                  id="newsPage"
+                  href="#labelNews"
+                >
+                  Tin Tức
+                </a>
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <a
                   id="introducePage"
-                  href="#introduce"
+                  href="#labelIntro"
                   class="nav-link link-dark px-3"
                   id="introduceNav"
                   >Giới Thiệu</a
@@ -304,7 +289,7 @@
               <li class="nav-item-header mt-1">
                 <a
                   id="contactPage"
-                  href="#contact"
+                  href="#labelContact"
                   class="nav-link link-dark px-3"
                   id="contactNav"
                   >Liên Hệ</a
@@ -316,7 +301,11 @@
           <div class="col-lg-2 d-flex justify-content-end" id="navMenuRight">
             <ul class="nav">
               <li class="nav-item-header mt-1">
-                <a id="loginPage" href="#login" class="nav-link link-dark px-3"
+                <a
+                  id="loginPage"
+                  href="#login"
+                  class="nav-link link-dark px-3"
+                  title="Đăng nhập"
                   ><i class="ri-user-3-line" style="font-size: 20px"></i
                 ></a>
               </li>
@@ -326,7 +315,14 @@
                   id="cartIcon"
                   href="#cart"
                   class="nav-link link-dark px-3 mt-1"
-                  ><i class="ri-shopping-bag-line" style="font-size: 20px"></i
+                  title="Giỏ hàng"
+                  ><i
+                    class="ri-shopping-bag-line"
+                    style="font-size: 20px"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  ></i
                 ></a>
               </li>
             </ul>
@@ -334,6 +330,86 @@
         </div>
       </div>
     </nav>
+
+    <!--=============== Offcanvas cart ===============-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <p id="offcanvasRightLabel"><strong>Giỏ Hàng</strong></p>
+
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <ul class="offCart">
+            <li class="pb-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: -10px">×</a>
+              </div>
+            </li>
+
+            <li class="pb-4 pt-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: 140px">×</a>
+              </div>
+            </li>
+
+            <li class="pb-4 pt-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: 290px">×</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="subTotal pb-3 pt-2">
+            <strong>Tổng cộng: </strong>
+            <a href="#" class="allPrice" style="top: 140px">954.000 đ</a>
+          </div>
+
+          <div class="col-12 offBtnLoad">
+            <button type="button" class="btn btn-outline-primary">
+              Xem Chi Tiết
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row">
@@ -405,6 +481,7 @@
             </button>
           </div>
         </div>
+
         <!--=============== Introduce ===============-->
         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-5">
           <img
@@ -415,7 +492,9 @@
         </div>
 
         <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 mt-5">
-          <label class="label1 mb-3 d-flex justify-content-center"
+          <label
+            class="label1 mb-3 d-flex justify-content-center"
+            id="labelIntro"
             >Giới Thiệu</label
           >
           <p class="contentIntro ms-2 me-2">
@@ -436,7 +515,9 @@
 
         <!--=============== Products ===============-->
         <div id="productRoot" class="col-12">
-          <label class="label2 pt-5 mb-3 d-flex justify-content-center"
+          <label
+            class="label2 pt-5 mb-3 d-flex justify-content-center"
+            id="labelProduct"
             >Bộ Sản Phẩm</label
           >
           <div class="row">
@@ -689,14 +770,19 @@
         <!--=============== News===============-->
         <div id="newsRoot" class="col-12">
           <div class="col-12 d-flex justify-content-center">
-            <label class="label3 pt-5">Tin Tức Mới nhất </label>
+            <label class="label3 pt-5" id="labelNews">Tin Tức Mới nhất </label>
           </div>
           <div class="col-12 d-flex justify-content-center">
             <a
               id="seeMoreRoot"
               href="#seeMore"
               class="text-decoration-none pt-4"
-              >Xem thêm <i class="ri-arrow-right-s-line"></i
+              >Xem tất cả tin tức
+              <i
+                id="iconLoadAll"
+                class="ri-arrow-right-s-line pt-5"
+                style="font-size: 18px"
+              ></i
             ></a>
           </div>
 
@@ -776,14 +862,14 @@
       <footer class="py-5 bg-dark">
         <div class="row mb-4">
           <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-            <h5 class="titleFooter ps-5 label4">
+            <h5 class="titleFooter ps-4 label4" id="labelContact">
               Liên Hệ
               <div class="lineFooter ps-5 mt-2"></div>
             </h5>
 
             <ul class="nav flex-column">
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">
+                <p class="nav-link-footer p-0 text-muted px-4">
                   <span>
                     <i class="ri-home-4-line iconFooter"></i>
                     Địa chỉ: Lê Đức Thọ, Quận 12, Thành Phố Hồ Chí Minh
@@ -791,7 +877,7 @@
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">
+                <p class="nav-link-footer p-0 text-muted px-4">
                   <span>
                     <i class="ri-mail-line iconFooter"></i>
                     Email: beskin@gmail.com
@@ -799,7 +885,7 @@
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">
+                <p class="nav-link-footer p-0 text-muted px-4">
                   <span>
                     <i class="ri-phone-line iconFooter"></i>
                     Hotline: 0123.456.789
@@ -807,7 +893,7 @@
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">
+                <p class="nav-link-footer p-0 text-muted px-4">
                   <span>
                     <i class="ri-earth-fill iconFooter"></i>
                     Website: chuacoweb.com
@@ -818,54 +904,57 @@
           </div>
 
           <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-            <h5 class="titleFooter ps-5 label4">
+            <h5 class="titleFooter ps-4 label4">
               Sản Phẩm
               <div class="lineFooter ps-5 mt-2"></div>
             </h5>
 
             <ul class="nav flex-column">
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">Kem dưỡng da</p>
+                <p class="nav-link-footer p-0 text-muted px-4">Sữa Rửa Mặt</p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">Mặt nạ</p>
+                <p class="nav-link-footer p-0 text-muted px-4">Nước Hoa Hồng</p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">Sữa rửa mặt</p>
+                <p class="nav-link-footer p-0 text-muted px-4">Serum</p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted px-5">Nước hoa</p>
+                <p class="nav-link-footer p-0 text-muted px-4">Kem Dưỡng Ẩm</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Mặt Nạ Dưỡng</p>
               </li>
             </ul>
           </div>
 
           <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-            <h5 class="titleFooter ps-5 label4">
+            <h5 class="titleFooter ps-4 label4">
               Hỗ Trợ Khách Hàng
               <div class="lineFooter ps-5 mt-2"></div>
             </h5>
 
             <ul class="nav flex-column">
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted ps-5">Giới thiệu</p>
+                <p class="nav-link-footer p-0 text-muted ps-4">Giới thiệu</p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted ps-5">
+                <p class="nav-link-footer p-0 text-muted ps-4">
                   Hướng dẫn mua hàng
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted ps-5">
+                <p class="nav-link-footer p-0 text-muted ps-4">
                   Chính sách đổi trả
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted ps-5">
+                <p class="nav-link-footer p-0 text-muted ps-4">
                   Chính sách bảo mật
                 </p>
               </li>
               <li class="nav-item mb-1">
-                <p class="nav-link-footer p-0 text-muted ps-5">
+                <p class="nav-link-footer p-0 text-muted ps-4">
                   Điều khoản dịch vụ
                 </p>
               </li>
@@ -873,7 +962,7 @@
           </div>
 
           <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
-            <form class="ps-5 pe-5">
+            <form class="ps-4 pe-4">
               <h5 class="titleFooter label4">
                 Đăng Ký Nhận Thông Báo
                 <div class="lineFooter ps-5 mt-2"></div>
@@ -900,53 +989,97 @@
             </form>
           </div>
 
-          <div class="col-xl-12">
-            <div class="payment-icon d-flex justify-content-center pt-5">
-              <a href="#visa" title="Visa">
-                <img
-                  src="./assets/image/visa.png"
-                  alt="visa"
-                  class="me-3"
-                  id="paymentImg"
-              /></a>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-12 d-flex justify-content-center pt-5"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#visa" title="Visa">
+                        <img
+                          src="./assets/image/visa.png"
+                          alt="visa"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
 
-              <a href="#ebay" title="Ebay">
-                <img
-                  src="./assets/image/ebay.png"
-                  alt="ebay"
-                  class="me-3"
-                  id="paymentImg"
-                />
-              </a>
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#ebay" title="Ebay">
+                        <img
+                          src="./assets/image/ebay.png"
+                          alt="ebay"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
 
-              <a href="#paypal" title="PayPal">
-                <img
-                  src="./assets/image/paypal.png"
-                  alt="paypal"
-                  class="me-3"
-                  id="paymentImg"
-              /></a>
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#paypal" title="PayPal">
+                        <img
+                          src="./assets/image/paypal.png"
+                          alt="paypal"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
 
-              <a href="#clickbank" title="ClickBank">
-                <img
-                  src="./assets/image/clickbank.png"
-                  alt="clickbank"
-                  class="me-3"
-                  id="paymentImg"
-              /></a>
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#clickbank" title="ClickBank">
+                        <img
+                          src="./assets/image/clickbank.png"
+                          alt="clickbank"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
 
-              <a href="#hsbc" title="HSBC">
-                <img
-                  src="./assets/image/hsbc.png"
-                  alt="hsbc"
-                  class="me-3"
-                  id="paymentImg"
-                />
-              </a>
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#hsbc" title="HSBC">
+                        <img
+                          src="./assets/image/hsbc.png"
+                          alt="hsbc"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#jcb" title="JCB">
+                        <img
+                          src="./assets/image/jcb.png"
+                          alt="jcb"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 pt-5 d-flex justify-content-center"
+              >
+                <p class="copyRight mt-3">&copy; 2022 Beauty Skin</p>
+              </div>
             </div>
-            <p class="copyRight d-flex justify-content-center pt-5">
-              &copy; 2022 Beauty Skin
-            </p>
           </div>
         </div>
       </footer>
