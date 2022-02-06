@@ -1,0 +1,48 @@
+#titleProductRoot {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.iconStar {
+  color: #fdd835;
+  letter-spacing: 2px;
+}
+
+.titleCapacity {
+  color: #ffc75f;
+  font-size: 16px;
+}
+
+.myCount input {
+  height: 40px;
+  width: 60px;
+  font-size: 20px;
+}
+
+.ri-heart-line {
+  font-size: 20px;
+}
+
+.ri-heart-line:hover {
+  cursor: pointer;
+  color: palevioletred;
+}
+
+#addToCartRoot {
+  text-transform: uppercase;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #000;
+}
+
+.contentP1 h5,
+.contentP2 h5,
+.contentP3 h5 {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.pro-social-link li i:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/image/favicon_io/favicon.ico"
+    />
+    <!--=============== Bootstrap 5 ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--=============== Remix Icons ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--=============== Slideshow Indicators ===============-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--=============== Be VietNam Font ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--=============== Style local ===============-->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/product-detail.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>Beauty Skin</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="border-bottomb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-md-8 col-sm-7 col-12">
+            <span class="d-flex">
+              <h5 id="desHeaderRoot">
+                Cửa hàng trực tuyến 24/7 | Giao hàng nhanh chóng
+              </h5>
+            </span>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-4 col-sm-5 col-xs-6 col-12 d-flex justify-content-center"
+          >
+            <div class="socialLink" id="iconHeaderRoot">
+              <i class="ri-facebook-box-line me-3" id="iconFB"></i>
+              <i class="ri-instagram-line me-3"></i>
+              <i class="ri-twitter-line me-3"></i>
+              <i class="ri-mail-line me-3"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--=============== Button Menu (Small devices) ===============-->
+    <a
+      id="btnSmallMenu"
+      class="text-decoration-none me-3"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      role="button"
+      aria-controls="offcanvasExample"
+    >
+      <span class="d-flex" id="quickMenuRoot">
+        <i
+          id="smallMenuRoot"
+          class="ri-menu-fill ms-3"
+          style="color: #fff; font-size: 30px"
+        ></i>
+        <h5 class="ms-3" style="color: #ffc75f">Beauty Skin</h5>
+      </span>
+
+      <div class="socialLink1">
+        <i class="ri-facebook-box-line me-3" id="iconFB"></i>
+        <i class="ri-instagram-line me-3"></i>
+        <i class="ri-twitter-line me-3"></i>
+        <i class="ri-mail-line me-3"></i>
+      </div>
+    </a>
+
+    <div
+      style="background-color: #111; color: #ffc75f"
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="offcanvasExampleLabel">
+          <span>
+            <h4 style="font-weight: bolder">B E S K I N</h4>
+            <i style="font-size: 14px">Thương hiệu Mỹ Phẩm Việt Nam</i>
+
+            <div class="socialLink pt-3" id="iconHeaderRoot">
+              <i class="ri-facebook-box-line me-3" id="iconFB"></i>
+              <i class="ri-instagram-line me-3"></i>
+              <i class="ri-twitter-line me-3"></i>
+              <i class="ri-mail-line me-3"></i>
+            </div>
+          </span>
+        </div>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+          id="closeBtn"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <span class="d-flex">
+          <i class="ri-home-4-line me-2" style="font-size: 18px"></i>
+          <a href="index.html"><p class="pb-3">Trang Chủ</p></a>
+        </span>
+
+        <a
+          id="productCollapse"
+          class="text-decoration-none"
+          data-bs-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+          ><span class="d-flex">
+            <i class="ri-ink-bottle-fill me-2" style="font-size: 18px"></i>
+            <p class="pb-3 mt-1">Sản Phẩm</p>
+          </span></a
+        >
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div
+            class="card card-body"
+            style="background-color: #f9edf8; border: none; padding: 0"
+          >
+            <ul aria-labelledby="productPage">
+              <li>
+                <a class="dropdown-item" href="#labelProduct" id="allProduct"
+                  >Tất cả sản phẩm</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Sữa Rữa Mặt</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Nước Hoa Hồng</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Serum</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Kem Dưỡng Ẩm</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Mặt Nạ Dưỡng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <span class="d-flex">
+          <i class="ri-article-line me-2" style="font-size: 18px"></i>
+          <a href="#labelNews"> <p class="pb-3 mt-1">Tin Tức</p></a>
+        </span>
+
+        <span class="d-flex">
+          <i class="ri-feedback-line me-2" style="font-size: 18px"></i>
+          <a href="#labelContact"><p class="pb-3">Liên Hệ</p></a>
+        </span>
+
+        <hr />
+        <span class="d-flex">
+          <i class="ri-shopping-bag-line me-2" style="font-size: 18px"></i>
+          <p
+            class="pb-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            Giỏ Hàng
+          </p>
+        </span>
+
+        <span class="d-flex">
+          <a href="login.html">
+            <i class="ri-login-box-line me-2" style="font-size: 18px"></i
+          ></a>
+          <a href="login.html"> <p class="pb-3">Đăng Nhập</p></a>
+        </span>
+      </div>
+    </div>
+
+    <!--=============== Nav ===============-->
+    <nav class="py-2 bg-light border-bottom bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10" id="navMenuLeft">
+            <ul class="nav me-auto">
+              <li class="nav-item mt-1">
+                <span class="fs-3" id="brandNameRoot">Beauty Skin</span>
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <a
+                  id="homePage"
+                  href="index.html"
+                  class="nav-link link-dark px-4"
+                  aria-current="page"
+                  >Trang Chủ</a
+                >
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <div class="dropdown">
+                  <a
+                    class="nav-link link-light px-3"
+                    type="button"
+                    id="productPage"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sản Phẩm
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="productPage">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#labelProduct"
+                        id="menuProduct"
+                        >Tất Cả Sản Phẩm</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Sữa Rửa Mặt</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Nước Hoa Hồng</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Serum</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Kem Dưỡng Ẩm</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#" id="menuProduct"
+                        >Mặt Nạ Dưỡng</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <a
+                  class="nav-link link-light px-3"
+                  id="newsPage"
+                  href="#labelNews"
+                >
+                  Tin Tức
+                </a>
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <a
+                  id="introducePage"
+                  href="#labelIntro"
+                  class="nav-link link-dark px-3"
+                  id="introduceNav"
+                  >Giới Thiệu</a
+                >
+              </li>
+
+              <li class="nav-item-header mt-1">
+                <a
+                  id="contactPage"
+                  href="#labelContact"
+                  class="nav-link link-dark px-3"
+                  id="contactNav"
+                  >Liên Hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 d-flex justify-content-end" id="navMenuRight">
+            <ul class="nav">
+              <li class="nav-item-header mt-1">
+                <a
+                  id="loginPage"
+                  href="login.html"
+                  class="nav-link link-dark px-3"
+                  title="Đăng nhập"
+                  ><i class="ri-user-3-line" style="font-size: 20px"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  id="cartIcon"
+                  href="#cart"
+                  class="nav-link link-dark px-3 mt-1"
+                  title="Giỏ hàng"
+                  ><i
+                    class="ri-shopping-bag-line"
+                    style="font-size: 20px"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--=============== Offcanvas cart ===============-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <p id="offcanvasRightLabel"><strong>Giỏ Hàng</strong></p>
+
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="row">
+          <ul class="offCart">
+            <li class="pb-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: -10px">×</a>
+              </div>
+            </li>
+
+            <li class="pb-4 pt-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: 140px">×</a>
+              </div>
+            </li>
+
+            <li class="pb-4 pt-4">
+              <a href="#sanpham1"
+                ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
+              /></a>
+              <div class="content ps-3">
+                <a href="">
+                  Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream ...
+                </a>
+                <span class="qualityPrice mt-2">
+                  01 x <span class="amount">318.000đ</span>
+                </span>
+                <a href="#" class="remove" style="top: 290px">×</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="subTotal pb-3 pt-2">
+            <strong>Tổng cộng: </strong>
+            <a href="#" class="allPrice" style="top: 140px">954.000 đ</a>
+          </div>
+
+          <div class="col-12 offBtnLoad">
+            <button type="button" class="btn btn-outline-primary">
+              <a href="cart-detail.html">Xem Chi Tiết</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!--=============== Product Detail   ===============-->
+
+        <div>
+          <label class="label1 mt-4 d-flex justify-content-center"
+            >Chi Tiết Sản Phẩm</label
+          >
+
+          <nav
+            style="--bs-breadcrumb-divider: '>'; color: #111"
+            aria-label="breadcrumb"
+            class="mt-3 d-flex justify-content-center"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Sản Phẩm</a></li>
+              <li class="breadcrumb-item" style="color: #111; font-weight: 900">
+                Danh mục Serum
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-4">
+          <div class="w3-content" style="max-width: 1200px">
+            <img
+              class="mySlides"
+              src="./assets/image/product_detail/IMG1-Product-2.gif"
+              style="width: 100%; display: none"
+            />
+
+            <img
+              class="mySlides"
+              src="./assets/image/product_detail/IMG2-Product-2.jpg"
+              style="width: 100%"
+            />
+
+            <img
+              class="mySlides"
+              src="./assets/image/product_detail/IMG3-Product-2.jpg"
+              style="width: 100%; display: none"
+            />
+
+            <img
+              class="mySlides"
+              src="./assets/image/product_detail/IMG4-Product-2.jpg"
+              style="width: 100%; display: none"
+            />
+
+            <div class="row">
+              <div class="col-3 mt-3">
+                <img
+                  class="demo w3-opacity w3-hover-opacity-off w-100 h-100 d-block"
+                  src="./assets/image/product_detail/IMG1-Product-2.gif"
+                  style="cursor: pointer"
+                  onclick="currentDiv(1)"
+                />
+              </div>
+
+              <div class="col-3 mt-3">
+                <img
+                  class="demo w3-opacity w3-hover-opacity-off w-100 h-100 d-block"
+                  src="./assets/image/product_detail/IMG2-Product-2.jpg"
+                  style="cursor: pointer"
+                  onclick="currentDiv(2)"
+                />
+              </div>
+
+              <div class="col-3 mt-3">
+                <img
+                  class="demo w3-opacity w3-hover-opacity-off w-100 h-100 d-block"
+                  src="./assets/image/product_detail/IMG3-Product-2.jpg"
+                  style="cursor: pointer"
+                  onclick="currentDiv(3)"
+                />
+              </div>
+
+              <div class="col-3 mt-3">
+                <img
+                  class="demo w3-opacity w3-hover-opacity-off w-100 h-100 d-block"
+                  src="./assets/image/product_detail/IMG4-Product-2.jpg"
+                  style="cursor: pointer"
+                  onclick="currentDiv(4)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12 mt-4 mx-3">
+          <h3 id="titleProductRoot">
+            Toner cấp ẩm, sáng da, ngừa mụn Skin1004 Madagascar Centella
+            Hyalu-cica Brightening Toner
+          </h3>
+
+          <div class="card-text">
+            <span class="priceDetailRoot d-flex">
+              <p class="discountPrice me-3" style="color: #111">490.000₫</p>
+              <p class="price">367.000₫</p>
+            </span>
+          </div>
+          <mark><i class="mt-4">TOP 2 - sản phẩm bán chạy</i></mark>
+
+          <div class="star-content d-flex mt-3">
+            <span class="iconStar"><i class="ri-star-fill"></i></span>
+            <span class="iconStar"><i class="ri-star-fill"></i></span>
+            <span class="iconStar"><i class="ri-star-fill"></i></span>
+            <span class="iconStar"><i class="ri-star-fill"></i></span>
+            <span class="iconStar"><i class="ri-star-fill"></i></span>
+            <span class="voteMark ms-3"
+              ><p><b>5.0</b> (230)</p></span
+            >
+          </div>
+
+          <div id="capacityRoot">
+            <p class="titleCapacity">Dung tích:</p>
+            <div class="form-check form-check-inline me-5">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">30 ml</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2">210 ml</label>
+            </div>
+          </div>
+
+          <div id="quantityRoot" class="mt-4">
+            <p class="titleCapacity">Số lượng:</p>
+            <div class="myCount">
+              <input type="number" min="1" max="9999" step="1" value="1" />
+            </div>
+          </div>
+
+          <div id="wishListRoot" class="mt-4">
+            <span class="d-flex">
+              <i class="ri-heart-line me-2"></i>
+              <p class="contentWishList mt-1">
+                Thêm vào danh sách yêu thích
+              </p></span
+            >
+          </div>
+
+          <button
+            class="btn btn-outline-warning"
+            id="addToCartRoot"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            Thêm Vào Giỏ Hàng
+          </button>
+
+          <div class="contentProductDetail mt-5">
+            <div class="contentP1">
+              <h5>Đây sản phẩm là gì</h5>
+              <p>
+                Một loại toner có độ dưỡng ẩm cao giúp tẩy tế bào chết nhẹ nhàng
+                đồng thời làm dịu và làm sáng da.
+              </p>
+            </div>
+
+            <div class="contentP2">
+              <h5>Thành phần</h5>
+              <p>
+                Alpha Hydroxy Acid (AHA): Giúp tẩy tế bào chết và loại bỏ tế bào
+                chết trên bề mặt da. <br />
+                Beta-Lipohydroxy Acid (LHA): Một chất tẩy da chết nhẹ nhàng,
+                loại bỏ các tế bào da chết. <br />
+                <br />
+                Công thức Hyalu-Cica (Axit Hyaluronic + Centella Asiatica): Làm
+                dịu và bổ sung độ ẩm cho da. Chiết xuất Centella Asiatica: Làm
+                dịu và bổ sung độ ẩm cho da
+              </p>
+            </div>
+
+            <div class="contentP3">
+              <h5>Lưu ý</h5>
+              <p>
+                Chỉ sử dụng ngoài da. Ngừng sử dụng nếu xảy ra kích ứng. Tránh
+                xa tầm tay trẻ em. Tránh tiếp xúc với mắt.
+              </p>
+            </div>
+
+            <div class="pro-social-link">
+              <ul class="d-flex" style="list-style-type: none; padding-left: 0">
+                <li class="me-3">
+                  <a href="#" style="color: #0073c6; font-weight: 500"
+                    >Chia sẻ</a
+                  >
+                </li>
+                <li>
+                  <i
+                    class="ri-facebook-box-line me-3"
+                    style="color: #0073c6"
+                  ></i>
+                </li>
+                <li>
+                  <i class="ri-instagram-line me-3" style="color: #d15465"></i>
+                </li>
+                <li>
+                  <i class="ri-twitter-line me-3" style="color: #3596b5"></i>
+                </li>
+                <li>
+                  <i class="ri-mail-line me-3" style="color: #ff8066"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--=============== Products ===============-->
+      <div id="productRoot" class="col-12">
+        <label
+          class="label2 pt-5 mb-3 d-flex justify-content-center"
+          id="labelProduct"
+          >Sản Phẩm Tương Tự</label
+        >
+        <div class="col-12 d-flex justify-content-center">
+          <a id="seeMoreRoot" href="#seeMore" class="text-decoration-none pt-2"
+            >Xem tất cả sản phẩm
+            <i
+              id="iconLoadAll"
+              class="ri-arrow-right-s-line pt-5"
+              style="font-size: 18px"
+            ></i
+          ></a>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
+            id="product3Root"
+          >
+            <div class="card cardProduct">
+              <img
+                src="./assets/image/Product-3.jpg"
+                class="imgProduct3 w-100 h-100"
+                alt="Sản phẩm 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Tinh chất rau má trị mụn BeSkin Madagascar Centella Ampoule
+                </h5>
+                <div class="card-text">
+                  <span class="priceRoot">
+                    <p class="discountPrice me-3">475.000₫</p>
+                    <p class="price">356.000₫</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="card-body controlBtn">
+                <button type="button" class="btn btn-outline-warning">
+                  <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
+            id="product4Root"
+          >
+            <div class="card cardProduct">
+              <img
+                src="./assets/image/Product-4.jpg"
+                class="imgProduct4 w-100 h-100"
+                alt="Sản phẩm 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mặt nạ làm dịu, ngừa mụn BeSkin Madagascar Centella ...
+                </h5>
+                <div class="card-text">
+                  <span class="priceRoot">
+                    <p class="discountPrice me-3">66.000₫</p>
+                    <p class="price">49.000₫</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="card-body controlBtn">
+                <button type="button" class="btn btn-outline-warning">
+                  <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
+            id="product5Root"
+          >
+            <div class="card cardProduct">
+              <img
+                src="./assets/image/Product-5.jpg"
+                class="imgProduct5 w-100 h-100"
+                alt="Sản phẩm 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Sữa Rửa Mặt BeSkin Madagascar Centella Ampoule Foam
+                </h5>
+                <div class="card-text">
+                  <span class="priceRoot">
+                    <p class="discountPrice me-3">375.000₫</p>
+                    <p class="price">281.000₫</p>
+                  </span>
+                </div>
+              </div>
+
+              <div class="card-body controlBtn">
+                <button type="button" class="btn btn-outline-warning">
+                  <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=============== Footer ===============-->
+    <div class="container-fluid mt-5">
+      <footer class="py-5 bg-dark">
+        <div class="row mb-4">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+            <h5 class="titleFooter ps-4 label4" id="labelContact">
+              Liên Hệ
+              <div class="lineFooter ps-5 mt-2"></div>
+            </h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">
+                  <span>
+                    <i class="ri-home-4-line iconFooter"></i>
+                    Địa chỉ: Lê Đức Thọ, Quận 12, Thành Phố Hồ Chí Minh
+                  </span>
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">
+                  <span>
+                    <i class="ri-mail-line iconFooter"></i>
+                    Email: beskin@gmail.com
+                  </span>
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">
+                  <span>
+                    <i class="ri-phone-line iconFooter"></i>
+                    Hotline: 0123.456.789
+                  </span>
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">
+                  <span>
+                    <i class="ri-earth-fill iconFooter"></i>
+                    Website:
+                    <a href="https://beautyskin-vie.000webhostapp.com/"
+                      >https://beautyskin-vie.000webhostapp.com/</a
+                    >
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+            <h5 class="titleFooter ps-4 label4">
+              Sản Phẩm
+              <div class="lineFooter ps-5 mt-2"></div>
+            </h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Sữa Rửa Mặt</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Nước Hoa Hồng</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Serum</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Kem Dưỡng Ẩm</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted px-4">Mặt Nạ Dưỡng</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+            <h5 class="titleFooter ps-4 label4">
+              Hỗ Trợ Khách Hàng
+              <div class="lineFooter ps-5 mt-2"></div>
+            </h5>
+
+            <ul class="nav flex-column">
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted ps-4">Giới thiệu</p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted ps-4">
+                  Hướng dẫn mua hàng
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted ps-4">
+                  Chính sách đổi trả
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted ps-4">
+                  Chính sách bảo mật
+                </p>
+              </li>
+              <li class="nav-item mb-1">
+                <p class="nav-link-footer p-0 text-muted ps-4">
+                  Điều khoản dịch vụ
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+            <form class="ps-4 pe-4">
+              <h5 class="titleFooter label4">
+                Đăng Ký Nhận Thông Báo
+                <div class="lineFooter ps-5 mt-2"></div>
+              </h5>
+
+              <p class="nav-link-footer">
+                Thông báo hàng tháng về những gì mới và thú vị từ BeSkin.
+              </p>
+
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Nhập địa chỉ Email"
+                style="text-align: center"
+              />
+
+              <button
+                class="btn btn-primary mt-3 d-flex w-100 justify-content-center"
+                type="button"
+              >
+                Đăng ký
+              </button>
+            </form>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-12 d-flex justify-content-center pt-5"
+              >
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#visa" title="Visa">
+                        <img
+                          src="./assets/image/visa.png"
+                          alt="visa"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#ebay" title="Ebay">
+                        <img
+                          src="./assets/image/ebay.png"
+                          alt="ebay"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#paypal" title="PayPal">
+                        <img
+                          src="./assets/image/paypal.png"
+                          alt="paypal"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#clickbank" title="ClickBank">
+                        <img
+                          src="./assets/image/clickbank.png"
+                          alt="clickbank"
+                          class="me-3"
+                          id="paymentImg"
+                      /></a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#hsbc" title="HSBC">
+                        <img
+                          src="./assets/image/hsbc.png"
+                          alt="hsbc"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
+
+                    <div
+                      class="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4 mt-3 d-flex justify-content-center"
+                    >
+                      <a href="#jcb" title="JCB">
+                        <img
+                          src="./assets/image/jcb.png"
+                          alt="jcb"
+                          class="me-3"
+                          id="paymentImg"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 pt-5 d-flex justify-content-center"
+              >
+                <p class="copyRight mt-3">&copy; 2022 Beauty Skin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <button
+        class="btn-bg-warning"
+        id="myBtnScrolling"
+        onclick="topFunction()"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </button>
+    </div>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/scrolling.js"></script>
+  <script src="./assets/js/slideshow.js"></script>
+</html>

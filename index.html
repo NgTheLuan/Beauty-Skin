@@ -194,7 +194,7 @@
           <a href="login.html">
             <i class="ri-login-box-line me-2" style="font-size: 18px"></i
           ></a>
-          <p class="pb-3">Đăng Nhập</p>
+          <a href="login.html"> <p class="pb-3">Đăng Nhập</p></a>
         </span>
       </div>
     </div>
@@ -369,7 +369,7 @@
             </li>
 
             <li class="pb-4 pt-4">
-              <a href="#sanpham1"
+              <a href="product-detail.html"
                 ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
               /></a>
               <div class="content ps-3">
@@ -384,7 +384,7 @@
             </li>
 
             <li class="pb-4 pt-4">
-              <a href="#sanpham1"
+              <a href="product-detail.html"
                 ><img src="./assets/image/Product-1.jpg" alt="Sản phẩm 1"
               /></a>
               <div class="content ps-3">
@@ -522,17 +522,32 @@
             id="labelProduct"
             >Bộ Sản Phẩm</label
           >
+          <div class="col-12 d-flex justify-content-center">
+            <a
+              id="seeMoreRoot"
+              href="#seeMore"
+              class="text-decoration-none pt-2"
+              >Xem tất cả sản phẩm
+              <i
+                id="iconLoadAll"
+                class="ri-arrow-right-s-line pt-5"
+                style="font-size: 18px"
+              ></i
+            ></a>
+          </div>
           <div class="row">
             <div
               class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
               id="product1Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-1.jpg"
-                  class="imgProduct1"
-                  alt="Sản phẩm 1"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-1.jpg"
+                    class="imgProduct1 w-100 h-100"
+                    alt="Sản phẩm 1"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream
@@ -547,7 +562,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -559,11 +580,13 @@
               id="product2Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-2.jpg"
-                  class="imgProduct2"
-                  alt="Sản phẩm 2"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-2.jpg"
+                    class="imgProduct2 w-100 h-100"
+                    alt="Sản phẩm 2"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Toner cấp ẩm, sáng da, ngừa mụn BeSkin Madagascar Centella
@@ -578,7 +601,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -590,11 +619,13 @@
               id="product3Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-3.jpg"
-                  class="imgProduct3"
-                  alt="Sản phẩm 3"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-3.jpg"
+                    class="imgProduct3 w-100 h-100"
+                    alt="Sản phẩm 3"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Tinh chất rau má trị mụn BeSkin Madagascar Centella Ampoule
@@ -608,7 +639,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -620,11 +657,13 @@
               id="product4Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-4.jpg"
-                  class="imgProduct4"
-                  alt="Sản phẩm 4"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-4.jpg"
+                    class="imgProduct4 w-100 h-100"
+                    alt="Sản phẩm 4"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Mặt nạ làm dịu, ngừa mụn BeSkin Madagascar Centella Watergel
@@ -639,7 +678,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -651,11 +696,14 @@
               id="product5Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-5.jpg"
-                  class="imgProduct5"
-                  alt="Sản phẩm 5"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-5.jpg"
+                    class="imgProduct5 w-100 h-100"
+                    alt="Sản phẩm 5"
+                  />
+                </a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Sữa Rửa Mặt BeSkin Madagascar Centella Ampoule Foam
@@ -669,7 +717,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -681,11 +735,14 @@
               id="product6Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-6.jpg"
-                  class="imgProduct6"
-                  alt="Sản phẩm 6"
-                />
+                <a href="product-detail.html"
+                  ><img
+                    src="./assets/image/Product-6.jpg"
+                    class="imgProduct6 w-100 h-100"
+                    alt="Sản phẩm 6"
+                  />
+                </a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Kem dưỡng làm dịu da BeSkin Madagascar Centella Soothing
@@ -700,7 +757,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -712,11 +775,13 @@
               id="product7Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-7.jpg"
-                  class="imgProduct7 w-100 h100"
-                  alt="Sản phẩm 7"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-7.jpg"
+                    class="imgProduct7 w-100 h-100"
+                    alt="Sản phẩm 7"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Tinh chất rau má cấp ẩm Skin1004 Madagascar Centella ...
@@ -730,7 +795,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
@@ -742,11 +813,13 @@
               id="product8Root"
             >
               <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-8.jpg"
-                  class="imgProduct8 w-100 h100"
-                  alt="Sản phẩm 8"
-                />
+                <a href="product-detail.html">
+                  <img
+                    src="./assets/image/Product-8.jpg"
+                    class="imgProduct8 w-100 h-100"
+                    alt="Sản phẩm 8"
+                /></a>
+
                 <div class="card-body">
                   <h5 class="card-title">
                     Nước hoa hồng BeSkin Madagascar Centella Toning Toner 210ml
@@ -760,7 +833,13 @@
                 </div>
 
                 <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
+                  <button
+                    type="button"
+                    class="btn btn-outline-warning"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"
+                  >
                     <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
                   </button>
                 </div>
