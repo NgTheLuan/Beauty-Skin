@@ -1,0 +1,55 @@
+.card {
+  margin-left: 250px !important;
+  margin-right: 250px !important;
+}
+
+#cardChild1,
+#cardChild2,
+#cardChild3 {
+  margin: 0 50px 0 50px;
+}
+
+#iconUserName,
+#iconPwd {
+  font-size: 18px;
+  height: 38px;
+}
+
+.ri-user-3-line:before,
+.ri-lock-password-line:before {
+  position: relative;
+}
+
+#loginRoot {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#userName,
+#pwd {
+  position: absolute;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+#lbFoPass {
+  position: absolute;
+  right: 4em;
+  color: blueviolet;
+}
+
+#lbPass:hover,
+#lbFoPass:hover {
+  cursor: pointer;
+}
+
+#flexCheckChecked {
+  position: relative;
+}
+
+#lbPass {
+  position: absolute;
+  margin-bottom: 10px !important;
+}

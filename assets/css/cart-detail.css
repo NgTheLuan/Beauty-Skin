@@ -1,0 +1,19 @@
+/********************  Cart Item ********************/
+.imgCart {
+  width: 100px;
+  height: 100px;
+}
+
+#btnRemove {
+  font-size: 18px;
+}
+
+#btnRemove:hover {
+  cursor: pointer;
+  color: #ffc75f;
+}
+
+.CustomHr {
+  border-bottom: 1px solid #8c8b8b;
+  width: 78%;
+}

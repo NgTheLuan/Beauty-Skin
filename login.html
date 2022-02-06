@@ -31,6 +31,7 @@
     />
     <!--=============== Style local ===============-->
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/login-register.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <title>Beauty Skin</title>
@@ -415,441 +416,92 @@
 
     <div class="container">
       <div class="row">
-        <!--=============== Banner ===============-->
-        <div id="bannerRoot" class="col-12 d-flex justify-content-center">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
+        <!--=============== Login ===============-->
+        <div class="col-12 mt-4">
+          <label class="label1 mb-4 d-flex justify-content-center"
+            >Đăng Nhập</label
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block w-100 h-100"
-                  id="banner__img1"
-                  src="./assets/image/Banner1.png"
-                  alt="banner 1"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100 h-100"
-                  id="banner__img2"
-                  src="./assets/image/Banner2.png"
-                  alt="banner 2"
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-
-        <!--=============== Introduce ===============-->
-        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mt-5">
-          <img
-            src="./assets/image/About.png"
-            alt="about"
-            class="d-block w-100 h-100"
-          />
-        </div>
-
-        <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 mt-5">
-          <label
-            class="label1 mb-3 d-flex justify-content-center"
-            id="labelIntro"
-            >Giới Thiệu</label
-          >
-          <p class="contentIntro ms-2 me-2">
-            Quyết tâm nâng cao các tiêu chuẩn trong các sản phẩm dưỡng da,
-            <b>Beauty Skin</b> đã thực hiện một cuộc hành trình nghiên cứu
-            nguyên liệu thô. Bắt đầu cho cuộc hành trình này.
-          </p>
-
-          <p class="contentIntro ms-2">
-            <b>Beauty Skin</b> đã phát hiện ra một loại nguyên liệu đỉnh cao là
-            Rau má từ vùng đất Madagascar – nơi đã phát hiện loài thực vật này
-            phát triển mạnh mẽ và tự nhiên nhiên nhất mà không có sự can thiệp
-            của bất kỳ tác nhân hóa học nào. Và chiết xuất này cũng chính là
-            thành phần cốt lõi tạo ra những sản phẩm được yêu thích nhất của
-            Beauty Skin.
-          </p>
-        </div>
-
-        <!--=============== Products ===============-->
-        <div id="productRoot" class="col-12">
-          <label
-            class="label2 pt-5 mb-3 d-flex justify-content-center"
-            id="labelProduct"
-            >Bộ Sản Phẩm</label
-          >
-          <div class="row">
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product1Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-1.jpg"
-                  class="imgProduct1"
-                  alt="Sản phẩm 1"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Kem chống nắng BeSkin Madagascar Centella Air-Fit SunCream
-                    ...
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">425.000₫</p>
-                      <p class="price">318.000₫</p>
-                    </span>
-                  </div>
+          <div class="card" id="loginRoot">
+            <div class="mb-2 mt-2" id="cardChild1">
+              <div class="row">
+                <div class="col-12">
+                  <i class="ri-user-3-line" id="iconUserName"></i>
+                  <label
+                    for="exampleFormControlInput1"
+                    class="form-label ms-1"
+                    id="userName"
+                  >
+                    Tên Tài Khoản</label
+                  >
                 </div>
 
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    class="form-control mt-2"
+                    id="exampleFormControlInput1"
+                  />
                 </div>
               </div>
             </div>
 
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product2Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-2.jpg"
-                  class="imgProduct2"
-                  alt="Sản phẩm 2"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Toner cấp ẩm, sáng da, ngừa mụn BeSkin Madagascar Centella
-                    ...
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">490.000₫</p>
-                      <p class="price">367.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
+            <div class="mb-2 mt-3" id="cardChild2">
+              <i class="ri-lock-password-line" id="iconPwd"></i>
+              <label
+                for="exampleFormControlInput1"
+                class="form-label ms-2"
+                id="pwd"
+                >Mật Khẩu</label
+              >
+              <input
+                type="password"
+                class="form-control mt-2"
+                id="exampleFormControlInput1"
+              />
             </div>
 
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product3Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-3.jpg"
-                  class="imgProduct3"
-                  alt="Sản phẩm 3"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Tinh chất rau má trị mụn BeSkin Madagascar Centella Ampoule
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">475.000₫</p>
-                      <p class="price">356.000₫</p>
-                    </span>
-                  </div>
+            <div class="mb-2 mt-3" id="cardChild3">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <input
+                    class="form-check-input mt-3 me-2"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-label mt-3" id="lbPass"
+                    ><i>Lưu mật khẩu</i></label
+                  >
                 </div>
 
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product4Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-4.jpg"
-                  class="imgProduct4"
-                  alt="Sản phẩm 4"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Mặt nạ làm dịu, ngừa mụn BeSkin Madagascar Centella Watergel
-                    ...
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">66.000₫</p>
-                      <p class="price">49.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product5Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-5.jpg"
-                  class="imgProduct5"
-                  alt="Sản phẩm 5"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Sữa Rửa Mặt BeSkin Madagascar Centella Ampoule Foam
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">375.000₫</p>
-                      <p class="price">281.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product6Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-6.jpg"
-                  class="imgProduct6"
-                  alt="Sản phẩm 6"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Kem dưỡng làm dịu da BeSkin Madagascar Centella Soothing
-                    Cream
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">420.000₫</p>
-                      <p class="price">315.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product7Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-7.jpg"
-                  class="imgProduct7 w-100 h100"
-                  alt="Sản phẩm 7"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Tinh chất rau má cấp ẩm Skin1004 Madagascar Centella ...
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">525.000₫</p>
-                      <p class="price">393.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mt-4"
-              id="product8Root"
-            >
-              <div class="card cardProduct">
-                <img
-                  src="./assets/image/Product-8.jpg"
-                  class="imgProduct8 w-100 h100"
-                  alt="Sản phẩm 8"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Nước hoa hồng BeSkin Madagascar Centella Toning Toner 210ml
-                  </h5>
-                  <div class="card-text">
-                    <span class="priceRoot">
-                      <p class="discountPrice me-3">480.000₫</p>
-                      <p class="price">360.000₫</p>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="card-body controlBtn">
-                  <button type="button" class="btn btn-outline-warning">
-                    <i class="ri-shopping-cart-line iconCart"></i> Giỏ hàng
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--=============== News===============-->
-        <div id="newsRoot" class="col-12">
-          <div class="col-12 d-flex justify-content-center">
-            <label class="label3 pt-5" id="labelNews">Tin Tức Mới nhất </label>
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <a
-              id="seeMoreRoot"
-              href="#seeMore"
-              class="text-decoration-none pt-4"
-              >Xem tất cả tin tức
-              <i
-                id="iconLoadAll"
-                class="ri-arrow-right-s-line pt-5"
-                style="font-size: 18px"
-              ></i
-            ></a>
-          </div>
-
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-4">
-              <div class="cardNews">
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      id="img1News"
-                      src="./assets/image/News1.jpg"
-                      alt="news1"
-                      class="w-100"
-                    />
-                  </div>
-                  <p class="card-text">
-                    Kem dưỡng SANTORINI ORANGE phiên bản limit ... liệu có thành
-                    xu hướng 2022.
-                  </p>
-                  <a id="newMore" href="#newsMore" class="btn btn-primary"
-                    >Xem thêm</a
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <label class="form-label mt-3" id="lbFoPass"
+                    ><i>Quên mật khẩu ?</i></label
                   >
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4">
-              <div class="cardNews">
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      id="img2News"
-                      src="./assets/image/News2.jpg"
-                      alt="news2"
-                      class="w-100"
-                    />
-                  </div>
-                  <p class="card-text">
-                    Tinh dầu IBIZA mùi hương thảo mộc cam sả, lưu giữ mùi hơn
-                    lâu hơn 24h.
-                  </p>
-                  <a id="newMore" href="#newsMore" class="btn btn-primary"
-                    >Xem thêm</a
+            <div class="mb-5 mt-3" id="cardChild4">
+              <div class="row">
+                <div class="col-6">
+                  <a href="register.html" style="float: right">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning me-3"
+                      id="btnRegister"
+                    >
+                      Đăng Ký
+                    </button></a
                   >
                 </div>
-              </div>
-            </div>
 
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-4">
-              <div class="cardNews">
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      id="img3News"
-                      src="./assets/image/News3.jpg"
-                      alt="news3"
-                      class="w-100"
-                    />
-                  </div>
-                  <p class="card-text">
-                    Ken dưỡng da PURE HEMP BALM và cách sử dụng sao cho hiệu
-                    quả.
-                  </p>
-                  <a id="newMore" href="#newsMore" class="btn btn-primary"
-                    >Xem thêm</a
+                <div class="col-6">
+                  <a href="index.html">
+                    <button type="button" class="btn btn-primary" id="btnLogin">
+                      Đăng Nhập
+                    </button></a
                   >
                 </div>
               </div>
