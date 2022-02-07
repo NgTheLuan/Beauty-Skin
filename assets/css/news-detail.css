@@ -1,0 +1,75 @@
+/* Tham khảo blockquote https://codepen.io/jimmycow/pen/LmjVaz */
+.new-blockquote {
+  font-size: 18px;
+  width: 80%;
+  margin: 20px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1em 30px 1.2em 75px;
+  border-left: 8px solid #78c0a8;
+  line-height: 1.6;
+  position: relative;
+  background: #ededed;
+}
+
+.new-blockquote::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #78c0a8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.new-blockquote::after {
+  content: "";
+}
+
+.new-blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.breadcrumb-item a {
+  color: #000;
+}
+
+.myTags {
+  font-weight: bold;
+}
+
+.avatarUser {
+  width: 80px;
+  height: 80px;
+}
+
+.card-comment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: auto;
+}
+
+#myNameRoot,
+#myEmailRoot,
+#myWebsiteRoot {
+  height: 50px;
+}
+
+#yourComment,
+#yourName,
+#yourMail,
+#yourWebsite {
+  font-weight: 500;
+}
