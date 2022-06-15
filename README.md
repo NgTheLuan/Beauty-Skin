@@ -1,1 +1,1 @@
-### Website: http://beautyskin.tk/
+### Website: https://beautskinvn.netlify.app/
